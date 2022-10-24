@@ -34,8 +34,8 @@
                         </div>
                         <br><br>
                         <h5 class="text-body mb-4">{{oglas.kontakt}}</h5>
-                        <button v-if="lang.value == 'eng'" class="btn" @click='downloadPDF()'>Download PDF</button>
-                        <button v-if="lang.value == 'srb'" class="btn" @click='downloadPDF()'>Preuzmi PDF</button> 
+                        <!--<button v-if="lang.value == 'eng'" class="btn" @click='downloadPDF()'>Download PDF</button>-->
+                       <!--<button v-if="lang.value == 'srb'" class="btn" @click='downloadPDF()'>Preuzmi PDF</button> -->
                     </div>
                     <br class='ms-2'>
                     <div class="col-sm-12 mt-3">
@@ -82,7 +82,7 @@
 import KomentarPreview from '../components/KomentarPreview.vue'
 import { lang } from "../data/lang.js";
 import allOglasi from '../data/oglasi.js'
-import jsPDF from 'jspdf'
+//import jsPDF from 'jspdf'
 //import html2canvas from "html2canvas"
 
 
@@ -148,17 +148,17 @@ export default{
             this.komentariCurUser.push({'ime':this.ime,'opis':this.tekst,'email':this.email,'username':user})
             localStorage.setItem(user,JSON.stringify(this.komentariCurUser))
         },
-         downloadPDF() {
-            var doc = new jsPDF("p", "mm", [800, 2200]); //portrait landscape height, width
-            doc.setFontSize(10);
-            let oglas = document.getElementById("oglas");
-            doc.html(oglas, {
-                callback: function (doc) {
-                doc.save();
-                },
-                width: 400,
-            });
-    },
+        // downloadPDF() {
+            //var doc = new jsPDF("p", "mm", [800, 2200]); //portrait landscape height, width
+            //doc.setFontSize(10);
+           // let oglas = document.getElementById("oglas");
+           // doc.html(oglas, {
+              //  callback: function (doc) {
+               // doc.save();
+               // },
+              //  width: 400,
+           // });
+    //},
     }
 
 }
