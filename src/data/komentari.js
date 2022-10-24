@@ -9,13 +9,13 @@ const allOglasi = [
     },
     {   
         ime : "Mrale",
-        opis : "Pronadjen kod migranata traze 100evra",
+        opis : "Pronadjen",
         email:'stojanovic@gmail.com'
     },  
     {   
         
         naziv : "Kaca",
-        opis : "Civava, mala. Odaziva se na Keti dfsdfsfsdfsfsdffdsf  dsdgttttttttttttttttttttttttttttt",
+        opis : "Civava, mala. Odaziva se na Keti ",
         email:'stojanovic@gmail.com'
     },
 
