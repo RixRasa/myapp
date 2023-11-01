@@ -1,5 +1,7 @@
 # myapp
 
+This is a copy repository of the Animal-Shelter repository, used for deployment. The original repository had some errors that could not be fixed, so this repository is being used for deployment.
+
 ## Project setup
 ```
 npm install
